@@ -1,0 +1,20 @@
+# permissions for end users to view objstores.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: objstore-viewer-role
+rules:
+- apiGroups:
+  - cninf-oss.oss.fjj.com
+  resources:
+  - objstores
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cninf-oss.oss.fjj.com
+  resources:
+  - objstores/status
+  verbs:
+  - get

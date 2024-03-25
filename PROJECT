@@ -1,0 +1,16 @@
+domain: oss.fjj.com
+layout:
+- go.kubebuilder.io/v3
+projectName: oss-operator
+repo: github.com/jack410/extending-kubernetes/oss-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: oss.fjj.com
+  group: cninf-oss
+  kind: ObjStore
+  path: github.com/jack410/extending-kubernetes/oss-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

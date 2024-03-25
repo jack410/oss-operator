@@ -1,0 +1,7 @@
+apiVersion: cninf-oss.oss.fjj.com/v1alpha1
+kind: ObjStore
+metadata:
+  name: fjj-01
+spec:
+  name: fjj-oss-z
+  locked: false
